@@ -2,3 +2,5 @@
 ```bash
 docker-compose up
 ```
+
+localhost:9000
