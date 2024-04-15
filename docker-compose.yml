@@ -6,7 +6,7 @@ services:
   changelog-api:
     image: changelog-api
     build:
-      context: ./gerador-changelog-api
+      context: ./changelog-api
       dockerfile: Dockerfile
     ports:
       - "3000:3000"  
@@ -14,7 +14,7 @@ services:
   changelog-ui:
     image: changelog-ui
     build:
-      context: ./gerador-changelog-ui
+      context: ./changelog-ui
       dockerfile: Dockerfile
     ports:
       - "9000:9000"

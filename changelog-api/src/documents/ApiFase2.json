@@ -1,0 +1,123 @@
+{
+    "url": "https://raw.githubusercontent.com/OpenBanking-Brasil/openapi/main/swagger-apis/",
+    "apis": [
+        {
+            "api": "accounts",
+            "versoes": [
+                {
+                    "old": "1.0.3.yml",
+                    "current": "2.0.0.yml"
+                },
+                {
+                    "old": "2.0.0.yml",
+                    "current": "2.0.1.yml"
+                }
+            ]
+        },
+        {
+            "api": "consents",
+            "versoes": [
+                {
+                    "old": "1.0.3.yml",
+                    "current": "2.0.0.yml"
+                },
+                {
+                    "old": "2.0.0.yml",
+                    "current": "2.0.1.yml"
+                }
+            ]
+        },
+        {
+            "api": "credit-cards",
+            "versoes": [
+                {
+                    "old": "1.0.4.yml",
+                    "current": "2.0.0.yml"
+                },
+                {
+                    "old": "2.0.0.yml",
+                    "current": "2.0.1.yml"
+                }
+            ]
+        }
+        ,
+        {
+            "api": "customers",
+            "versoes": [
+                {
+                    "old": "1.0.3.yml",
+                    "current": "2.0.0.yml"
+                },
+                {
+                    "old": "2.0.0.yml",
+                    "current": "2.0.1.yml"
+                }
+            ]
+        },
+        {
+            "api": "financings",
+            "versoes": [
+                {
+                    "old": "1.0.4.yml",
+                    "current": "2.0.0.yml"
+                },
+                {
+                    "old": "2.0.0.yml",
+                    "current": "2.0.1.yml"
+                }
+            ]
+        },
+        {
+            "api": "invoice-financings",
+            "versoes": [
+                {
+                    "old": "1.0.4.yml",
+                    "current": "2.0.0.yml"
+                },
+                {
+                    "old": "2.0.0.yml",
+                    "current": "2.0.1.yml"
+                }
+            ]
+        },
+        {
+            "api": "loans",
+            "versoes": [
+                {
+                    "old": "1.0.4.yml",
+                    "current": "2.0.0.yml"
+                },
+                {
+                    "old": "2.0.0.yml",
+                    "current": "2.0.1.yml"
+                }
+            ]
+        },
+        {
+            "api": "resources",
+            "versoes": [
+                {
+                    "old": "1.0.2.yml",
+                    "current": "2.0.0.yml"
+                },
+                {
+                    "old": "2.0.0.yml",
+                    "current": "2.0.1.yml"
+                }
+            ]
+        },
+        {
+            "api": "unarranged-accounts-overdraft",
+            "versoes": [
+                {
+                    "old": "1.0.4.yml",
+                    "current": "2.0.0.yml"
+                },
+                {
+                    "old": "2.0.0.yml",
+                    "current": "2.0.1.yml"
+                }
+            ]
+        }
+    ]
+}

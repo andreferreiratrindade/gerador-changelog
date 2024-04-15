@@ -1,0 +1,29 @@
+POST https://88v16tfb0l.execute-api.sa-east-1.amazonaws.com/development/change-log   HTTP/1.1
+content-type: application/json
+
+{
+   "urlCurrent": "https://raw.githubusercontent.com/OpenBanking-Brasil/draft-openapi/main/swagger-apis/channels/2.0.0-rc.1.yml",
+"urlOld": "https://raw.githubusercontent.com/OpenBanking-Brasil/draft-openapi/main/swagger-apis/channels/2.0.0-beta.1.yml"
+}
+###
+POST https://88v16tfb0l.execute-api.sa-east-1.amazonaws.com/development/change-log   HTTP/1.1
+content-type: application/json
+
+{
+    "urlOld": "https://raw.githubusercontent.com/OpenBanking-Brasil/openapi/main/swagger-apis/accounts/1.0.3.yml",
+    "urlCurrent": "https://raw.githubusercontent.com/OpenBanking-Brasil/openapi/main/swagger-apis/accounts/2.0.0.yml"
+}
+###
+POST http://localhost:3000/change-log/generate-change-log    HTTP/1.1
+content-type: application/json
+
+{
+    "urlOld": "https://raw.githubusercontent.com/Sensedia/draft-openapi/main/swagger-apis/resources/2.0.0.yml",
+    "urlCurrent": "https://raw.githubusercontent.com/Sensedia/draft-openapi/main/swagger-apis/resources/2.0.1.yml",
+    "templateDescription":{
+        "templateAdded": "Adicionado ${field}",
+        "templateEdited": "Alterado ${field}",
+        "templateRemoved": "Removido ${field}",
+        "templateRequired": "Alterado mandatoriedade"
+    }
+}

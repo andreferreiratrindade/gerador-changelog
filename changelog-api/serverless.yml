@@ -1,0 +1,45 @@
+app: changelog-generator-app
+
+service: changelog-generator
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  stage: ${opt:stage, 'development'}
+  stackName: ${self:service}-${self:provider.stage}
+  apiName: ${self:service}-${self:provider.stage}
+  region: sa-east-1
+  memorySize: 128
+  timeout: 30
+  deploymentBucket:
+    name: ${self:provider.stage}-acme-${opt:region, self:provider.region}-deploys
+    serverSideEncryption: AES256
+    blockPublicAccess: true
+
+  environment:
+    LOG_LEVEL: debug
+    AWS_CORS: '*'
+# you can add packaging information here
+package:
+  exclude:
+    - tests/**
+    - documents/**
+plugins:
+  - serverless-deployment-bucket
+  - serverless-plugin-typescript
+  - serverless-offline
+
+functions:
+  trigger:
+    handler: lambda_handler.handler
+    events:
+      - http:
+          path: change-log
+          method: post
+          cors:
+            origins:
+              - '*'
+            headers:
+              - Content-Type
